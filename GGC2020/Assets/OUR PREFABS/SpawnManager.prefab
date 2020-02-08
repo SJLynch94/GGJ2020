@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5262051381397748923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5262051381397748920}
+  - component: {fileID: 5262051381397748921}
+  m_Layer: 0
+  m_Name: AISpawner
+  m_TagString: AISpawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5262051381397748920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262051381397748923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5262051381624782128}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5262051381397748921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262051381397748923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d406ead98d993bc4597d8e970d549343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnerID: 
+--- !u!1 &5262051381624782131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5262051381624782128}
+  - component: {fileID: 5262051381624782129}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5262051381624782128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262051381624782131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5262051381397748920}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5262051381624782129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262051381624782131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5d20d50fe229a45a17615cd744678c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmosColour: {r: 1, g: 0, b: 0, a: 1}
+  mKnightPrefab: {fileID: 8920854907444130371, guid: 33994f5fe65ce614eba76fe5f35b5f8c,
+    type: 3}
+  mGolemPrefab: {fileID: 8920854907444130371, guid: 33994f5fe65ce614eba76fe5f35b5f8c,
+    type: 3}
+  mGoblinPrefab: {fileID: 5331888511066928003, guid: 1c922cfaf62c6d54f98be141910a735a,
+    type: 3}
+  mWizardPrefab: {fileID: 5331888511066928003, guid: 1c922cfaf62c6d54f98be141910a735a,
+    type: 3}
+  mTotalEnemies: 10
+  mSpawnIDList: 
+  mSpawn: 1
+  mWaveTimer: 0
+  mTotalWaves: 5
+  centre: {x: 0, y: 0, z: 0}
+  size: {x: 0, y: 0, z: 0}
